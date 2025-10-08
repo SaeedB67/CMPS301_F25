@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "****** Welcome to the Photography Trip Planner ******" << endl;
+	cout << "We are starting from the University of La Verne - California - USA" << endl;
+	cout << "Distance to Hawaii" << endl;
+	double distanceToHawaii;
+	cin >> distanceToHawaii;
+	cout << "Distance to Alaska" << endl;
+	double distanceToAlaska;
+	cin >> distanceToAlaska;
+	cout << "Distance to Europe" << endl;
+	double distanceToEurope;
+	cin >> distanceToEurope;
+	cout << "Distance to Antartica" << endl;
+	double distanceToAntartica;
+	cin >> distanceToAntartica;
+	cout << "Vehicle Miles Per Gallon (MPG)" << endl;
+	double vehicleMPG;
+	cin >> vehicleMPG;
+	cout << "Gas Price per Gallon" << endl;
+	double gasPrice;
+	cin >> gasPrice;
+	cout << "Camera Gear Weight in Pounds" << endl;
+	double cameraGearWeight;
+	cin >> cameraGearWeight;
+	double totalDistance;
+	double fuelCost;
+	double weightFee;
+	double totalTripCost;
+	totalDistance = distanceToHawaii + distanceToAlaska + distanceToEurope + distanceToAntartica;
+	fuelCost = (totalDistance / vehicleMPG) * gasPrice;
+	weightFee = 0.15 * cameraGearWeight * totalDistance;
+	totalTripCost = fuelCost + weightFee;
+	cout << "Total Distance: " << totalDistance << " miles" << endl;
+	cout << "Fuel Effeciency: " << vehicleMPG << " miles per gallon" << endl;
+	cout << "Gas Price: $" << gasPrice << " per gallon" << endl;
+	cout << "Camera Gear Weight: " << cameraGearWeight << " pounds" << endl;
+	cout << "----------------------------------------" << endl;
+	cout << "Fuel Cost: $" << fuelCost << endl;
+	cout << "Weight Fee: $" << weightFee << endl;
+	cout << "----------------------------------------" << endl;
+	cout << "Total Trip Cost: $" << totalTripCost << endl;
+	cout << "========================================" << endl;
+	cout << "****** Thank you for using the Photography Trip Planner ******" << endl;
+	cout << "****** Have a nice day! ******" << endl;
+	cout << "Shoot Smart, Travel Safe!" << endl;
+	return 0;
+}
